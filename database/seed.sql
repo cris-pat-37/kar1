@@ -4,7 +4,8 @@
 INSERT INTO users (username, password, email, role) VALUES 
 ('admin', '$2a$10$qfME6Go166Itze9YbcQSJe/Qqmy3v6FlaZGZiDBc6k7jgi1BkRZwW', 'admin@warehouse.com', 'admin'),
 ('manager', '$2a$10$qfME6Go166Itze9YbcQSJe/Qqmy3v6FlaZGZiDBc6k7jgi1BkRZwW', 'manager@warehouse.com', 'manager'),
-('operator', '$2a$10$qfME6Go166Itze9YbcQSJe/Qqmy3v6FlaZGZiDBc6k7jgi1BkRZwW', 'operator@warehouse.com', 'operator');
+('operator', '$2a$10$qfME6Go166Itze9YbcQSJe/Qqmy3v6FlaZGZiDBc6k7jgi1BkRZwW', 'operator@warehouse.com', 'operator'),
+('test', '$2b$10$BizJiLZzFSL2ALu4I4D3Iud3/nye5ygG8TdrlWAfkjXiW2Tx/zy0y', 'test@warehouse.com', 'admin');
 
 -- Seed Vendors
 INSERT INTO vendors (name, contact_person, email, phone, address) VALUES
