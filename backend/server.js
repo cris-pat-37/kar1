@@ -39,6 +39,10 @@ app.get('/', (req, res) => {
 app.use(errorHandler);
 
 // Start Server
-app.listen(env.PORT, () => {
-  console.log(`[SERVER] Running in ${env.NODE_ENV} mode on port ${env.PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(env.PORT, () => {
+    console.log(`[SERVER] Running in ${env.NODE_ENV} mode on port ${env.PORT}`);
+  });
+}
+
+module.exports = app;
